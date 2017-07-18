@@ -1,0 +1,46 @@
+/* Style the tab */
+.tabs {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+}
+.tabs:after {
+    content: " ";
+    display:table;
+    clear:both;
+}
+.tabs_wrap {
+    display: inline-block;
+}
+/* Style the links inside the tab */
+.tabs_link {
+    float: left;
+    display: block;
+    color: #bb0808;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-right: 4px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+/* Create an active/current tablink class */
+.tabs_link:hover, .tabs_link--active {
+    background-color: #f6c452;
+    color:#102747;
+}
+/* Style the tab content */
+.tabs_content {
+    overflow:hidden;
+    max-height:0;
+    transition:all .3s ease;
+}
+.tabs_content--active {
+    max-height:none;
+}
